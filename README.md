@@ -5,5 +5,6 @@ sudo apt-get install freeglut3-dev
 
 
 ### For working on Ubuntu operating system: 
-gcc filename.c -lGL -lGLU -lglut<br/>
+g++ programFile.cpp -o program -lglut -lGLU -lGL<br/>
+./program
 where filename.c is the name of the file with which this program is saved.
