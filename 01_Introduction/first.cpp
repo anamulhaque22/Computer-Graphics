@@ -3,20 +3,10 @@
 #include <stdio.h>
 #include<GL/gl.h>
 #include <GL/glut.h>
-
- 
-
 using namespace std;
-
- 
-
 int X1, Y1, X2, Y2, r ,cx, cy;
 
- 
-
- 
-
-void DDA(void)
+void DDAFn(void)
 {
 
  
@@ -79,11 +69,6 @@ void myInit (void)
 //    gluOrtho2D(0.0, 640.0,0.0, 480.0);
 }
 
- 
-
- 
-
-
 int main(int argc, char** argv)
 {
 
@@ -104,7 +89,7 @@ int main(int argc, char** argv)
     cout<<"Enter the final points:\t";
     cin>>X2;
     cin>>Y2;
-    glutDisplayFunc(DDA);
+    glutDisplayFunc(DDAFn);
     myInit ();
     glutMainLoop();
 
