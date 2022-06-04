@@ -1,1 +1,3 @@
-executable (application/x-executable)
+*
+!/**/
+!*.*
